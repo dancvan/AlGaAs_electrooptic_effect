@@ -1,0 +1,5 @@
+After talking with ari the path forward starts with the following two things: 
+* Calculate how how much the frequency noise contributes to a percieved phase differential (d\phi)/(d\nu_{laser})
+* Send email to Stefan about whether or not we want to do this measurement in vaccum
+
+## See photo for notes on Ari and my discussion
