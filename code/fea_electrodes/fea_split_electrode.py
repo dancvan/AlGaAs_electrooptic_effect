@@ -1,8 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.colors as colors
 import time
-from mpl_toolkits.mplot3d import Axes3D
 import h5py
 
 ## Setting Boundary conditions for each split electrode with unique central hole sizes
@@ -14,7 +11,7 @@ range_x = np.arange(0, lenX, delta)
 lenZ = .0508/2.0 ## the distance between your plates
 range_z = np.arange(-lenZ/2, lenZ/2, delta)
 
-largest_radii =600e-6
+largest_radii = 3.2e-3
 
 smallest_radii = 200e-6
 
@@ -91,7 +88,7 @@ elapsed = time.time() - start
 print("Iteration finished after {} iterations and took {} seconds".format(count, elapsed))
 
 
-file = h5py.File('numerical_split_electrode_test_vary_radii.h5'.format(count), 'w')
+file = h5py.File('data/split_electrode/numerical_split_electrode_test_vary_radii.h5'.format(count), 'w')
 file.create_dataset('X', data=X)
 file.create_dataset('Z', data=Z)
 file.create_dataset('V_o', data=V_o)
