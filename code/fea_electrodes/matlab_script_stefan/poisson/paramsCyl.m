@@ -18,20 +18,20 @@ p.expBC.R0=1e5;              % exponential BC drop-off characteristic dist
 p.expBC.V0=0;                % exponential BC drop-off target voltage
 
 
-p.plate1.diameter=0.08;      % diameter of front plate
-p.plate1.hole_diameter=0.01; % hole diameter in front plate
-p.plate1.zpos=d/2+0.01;      % z position of front plate
-p.plate1.V=0.5;              % voltage on front plate
+p.plate1.diameter=0.0762;      % diameter of front plate
+p.plate1.hole_diameter=0.003; % hole diameter in front plate
+p.plate1.zpos=d/2+0.0045;      % z position of front plate
+p.plate1.V=300.0;              % voltage on front plate
 
 
-p.plate2.diameter=0.08;      % diameter of back plate
-p.plate2.hole_diameter=0.01; % hole diameter in back plate
-p.plate2.zpos=d/2-0.01;      % z position of back plate
-p.plate2.V=-0.5;             % voltage on back plate
+p.plate2.diameter=0.0762;      % diameter of back plate
+p.plate2.hole_diameter=0.003; % hole diameter in back plate
+p.plate2.zpos=d/2-0.0045;      % z position of back plate
+p.plate2.V=0.0;             % voltage on back plate
 
 
-p.optic.diameter=0.08;       % optic diameter
-p.optic.thickness=0.015;     % optic thickness
+p.optic.diameter=0.0253;       % optic diameter
+p.optic.thickness=0.007;     % optic thickness
 p.optic.zpos_com=d/2;        % optic center of mass position
 p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
 
