@@ -34,10 +34,10 @@ if bc==0
     rho_outer1=p.plate1.diameter/2;
     rho_inner2=p.plate2.hole_diameter/2;
     rho_outer2=p.plate2.diameter/2;
-    indrhob=1+(round(rho_inner2/step):round(rho_outer2/step));
-    indrhot=1+(round(rho_inner1/step):round(rho_outer1/step));
-    indzb=1+round((p.plate2.zpos)/step);
-    indzt=1+round((p.plate1.zpos)/step);
+    indrhob=idxrnd(rho_inner2):idxrnd(rho_outer2);
+    indrhot=idxrnd(rho_inner1):idxrnd(rho_outer1);
+    indzb=idxrnd(p.plate2.zpos);
+    indzt=idxrnd(p.plate1.zpos);
     V(idx(indrhob,indzb))=Vm; % set plate 2 voltage
     V(idx(indrhot,indzt))=Vp; % set plate 1 voltage
     if p.expBC.use
@@ -45,21 +45,21 @@ if bc==0
     end
 elseif bc==1
     pl=p.plate1;
-    indrho=1+(round((pl.rhopos-pl.width/2)/step):round((pl.rhopos+pl.width/2)/step));
-    indz=1+round((pl.zpos)/step);
+    indrho=idxrnd(pl.rhopos-pl.width/2):idxrnd(pl.rhopos+pl.width/2);
+    indz=idxrnd(pl.zpos);
     V(idx(indrho,indz))=pl.V;
     pl=p.plate2;
-    indrho=1+(round((pl.rhopos-pl.width/2)/step):round((pl.rhopos+pl.width/2)/step));
-    indz=1+round((pl.zpos)/step);
+    indrho=idxrnd(pl.rhopos-pl.width/2):idxrnd(pl.rhopos+pl.width/2);
+    indz=idxrnd(pl.zpos);
     V(idx(indrho,indz))=pl.V;
     pl=p.plate3;
-    indrho=1+(round((pl.rhopos-pl.width/2)/step):round((pl.rhopos+pl.width/2)/step));
-    indz=1+round((pl.zpos)/step);
+    indrho=idxrnd(pl.rhopos-pl.width/2):idxrnd(pl.rhopos+pl.width/2);
+    indz=idxrnd(pl.zpos);
     V(idx(indrho,indz))=pl.V;
     pl=p.plate4;
-    indrho=1+(round((pl.rhopos-pl.width/2)/step):round((pl.rhopos+pl.width/2)/step));
-    indz=1+round((pl.zpos)/step);
-    V(idx(indrho,indz))=pl.V;  
+    indrho=idxrnd(pl.rhopos-pl.width/2):idxrnd(pl.rhopos+pl.width/2);
+    indz=idxrnd(pl.zpos);
+    V(idx(indrho,indz))=pl.V;
     if p.expBC.use
         setExpBC(p.expBC.R0,p.expBC.V0);
     end
