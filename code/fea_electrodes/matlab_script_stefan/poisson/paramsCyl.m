@@ -15,7 +15,7 @@ d=p.sim.Size;
 
 
 p.expBC.use=true;            % boolean use exponential BC?
-p.expBC.R0=0.1;              % exponential BC drop-off characteristic dist
+p.expBC.R0=0.15;              % exponential BC drop-off characteristic dist
 p.expBC.V0=0;                % exponential BC drop-off target voltage
 
 
