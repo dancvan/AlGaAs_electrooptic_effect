@@ -205,7 +205,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
     #Displacement spectra
     if  meas_type == 'swept':
         spectra_disp = [spectra[0], displac_spect, spectra[2]]
-        final_fig = bode_plt(spectra, new_final_dir, date.replace('_','\_'), 'Pockels_effect_frequency_response_final', ylbl='Vpk')
+        final_fig = bode_plt(spectra, new_final_dir, date.replace('_','\_'), 'Pockels_effect_frequency_response_verrspectra', ylbl='Vpk')
     else:
         final_fig = plt.loglog(spectra[0],displac_spect,color='m',label=labl, linewidth=3)
     if model == True:
