@@ -159,7 +159,6 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
 
         #Voltage spectra (with an input of 300Vpk) don't forget phase info
         spec_300Vpk = new_swept_tf[1]*300
-        spectra = [new_swept_tf[0],spec_300Vpk, new_swept_tf[2]]
 
     #Laser frequency spectra calibration
     laserV2Hz = 2.0e6
@@ -170,6 +169,12 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
     CAL = OLG_tf*CLG
     CALVpHz=CAL/HzpV
     CALHzpV=HzpV/CAL
+
+    #phase correction to swept measurement (HVA and loop correction factor)
+    if meas_type == 'swept':
+        phase_final = np.angle(stf_noHVA, deg=True) + np.angle(HVA_tf, deg=True) + np.angle(CAL, deg=True)
+        spectra = [new_swept_tf[0],spec_300Vpk, phase_final]
+
 
     #Laser frequency spectra
     freq_noise = abs(CALHzpV)*spectra[1]
@@ -244,7 +249,8 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
         laser_freq = f.create_dataset("laser_freq", data=nu)
         laserPZTresp = f.create_dataset("laserV2Hz", data=laserV2Hz )
         hva_save_ch3.attrs['dir'] = HVA_dir
-        olg_save = f.create_group("raw/olg")                                                # where olg data will be saved
+        olg_save = f.create_group("raw/olg")                                             # where olg data will be saved
+        cal_save = f.create_group("raw/cal")                                             # easily accessible loop calibration factor data 
         olg_save.attrs['dir'] = OLG_dir
         if meas_type == 'swept':
             hvadb_save_ch1 = f.create_dataset("raw/hva/ch1/db", data=HVA_CH1[1])
@@ -253,6 +259,8 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
         hvadeg_save_ch3 = f.create_dataset("raw/hva/ch3+pomona/deg", data=HVA_inter[2])
         olgdb_save = f.create_dataset("raw/olg/db", data=OLG_inter[1])
         olgdeg_save = f.create_dataset("raw/olg/deg", data=OLG_inter[2])
+        calgain_save = f.create_dataset("raw/cal/gain", data=abs(CAL))
+        caldeg_save = f.create_dataset("raw/cal/deg", data=np.angle(CAL))
 
 
         #Calibrated data
