@@ -35,6 +35,13 @@ def concat_vecs(directory):
 def transfer_function(amplitude, phase):
     return 10**(amplitude/20)* np.exp(1j*(phase/180)*np.pi)
 
+def phase_wrap(phase_array, type='deg'):
+    if type == 'deg':
+        fin_phase_array = (phase_array + 180) % (2 * 180) - 180
+    if type == 'rad':
+        fin_phase_array = (phase_array + np.pi) % (2 * np.pi) - np.pi
+    return fin_phase_array
+
 def function_transfer(freq,tf_in):
     db = abs(tf_in)
     deg = np.angle(tf_in, deg=True)
@@ -250,7 +257,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
         laserPZTresp = f.create_dataset("laserV2Hz", data=laserV2Hz )
         hva_save_ch3.attrs['dir'] = HVA_dir
         olg_save = f.create_group("raw/olg")                                             # where olg data will be saved
-        cal_save = f.create_group("raw/cal")                                             # easily accessible loop calibration factor data 
+        cal_save = f.create_group("raw/cal")                                             # easily accessible loop calibration factor data
         olg_save.attrs['dir'] = OLG_dir
         if meas_type == 'swept':
             hvadb_save_ch1 = f.create_dataset("raw/hva/ch1/db", data=HVA_CH1[1])
@@ -260,7 +267,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
         olgdb_save = f.create_dataset("raw/olg/db", data=OLG_inter[1])
         olgdeg_save = f.create_dataset("raw/olg/deg", data=OLG_inter[2])
         calgain_save = f.create_dataset("raw/cal/gain", data=abs(CAL))
-        caldeg_save = f.create_dataset("raw/cal/deg", data=np.angle(CAL))
+        caldeg_save = f.create_dataset("raw/cal/deg", data=np.angle(CAL, deg=True))
 
 
         #Calibrated data
