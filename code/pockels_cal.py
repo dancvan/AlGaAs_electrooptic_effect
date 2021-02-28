@@ -179,7 +179,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
 
     #phase correction to swept measurement (HVA and loop correction factor)
     if meas_type == 'swept':
-        phase_final = np.angle(stf_noHVA, deg=True) + np.angle(HVA_tf, deg=True) + np.angle(CAL, deg=True)
+        phase_final = np.angle(stf_noHVA, deg=True) + np.angle(HVA_tf, deg=True) - np.angle(CAL, deg=True)
         spectra = [new_swept_tf[0],spec_300Vpk, phase_final]
 
 
