@@ -9,4 +9,4 @@ plotXsec(p.xsec12,GRADrhop*V,'Erho [V/m]');
 hold on
 plotXsec(p.xsec12,GRADrhom*V,'Erho [V/m]');
 set(findall(gca, 'Type', 'Line'),'LineWidth',5);
-saveas(gcf,[curr_dir datestr((today('datetime'))) '_b_e_field_inside_outside']);
+saveas(gcf,[curr_dir datestr((today('datetime'))) '_c_e_field_inside_outside']);

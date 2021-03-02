@@ -9,4 +9,4 @@ plotXsec(p.xsec12,GRADzp*V,'Ez [V/m]')
 hold on
 plotXsec(p.xsec12,GRADzm*V,'Ez [V/m]')
 set(findall(gca, 'Type', 'Line'),'LineWidth',5);
-saveas(gcf,[curr_dir datestr((today('datetime'))) '_e_field_inside_outside']);
+saveas(gcf,[curr_dir datestr((today('datetime'))) '_e_field_inside_outside_normal']);

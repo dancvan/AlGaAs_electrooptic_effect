@@ -5,8 +5,8 @@ function p=paramsCartC()
 
 % simulation parameters
 p.sim.coordsys='cartesian';  % type of coordinate system
-p.sim.Size=0.05;             % thickness and radius of simulation box
-p.sim.N=201;                 % number of points
+p.sim.Size=0.08;             % thickness and radius of simulation box
+p.sim.N=401;                 % number of points
 p.sim.total_iter=40000;      % total iterations
 p.sim.update_iter=1000;      % iterations between drawing updates
 p.sim.iter_stepsize=0.1;     % dimensionless iteration step size parameter
@@ -18,31 +18,31 @@ p.expBC.use=true;            % boolean use exponential BC?
 p.expBC.R0=1e5;              % exponential BC drop-off characteristic dist
 p.expBC.V0=0;                % exponential BC drop-off target voltage
 
-plat_diam = 0.02; 
+plat_diam = 0.038; 
 
 
 p.plate1.width=plat_diam;         % diameter of plate
-p.plate1.rhopos=d/2-0.013;  % rho center position of plate
-p.plate1.zpos=d/2+0.01;      % z position of plate
+p.plate1.rhopos=d/2-0.02;  % rho center position of plate
+p.plate1.zpos=d/2+0.005;      % z position of plate
 p.plate1.V=0;             % voltage on plate
 
 p.plate2.width=plat_diam;         % diameter of plate
-p.plate2.rhopos=d/2+0.013;  % rho center position of plate
-p.plate2.zpos=d/2+0.01;      % z position of plate
+p.plate2.rhopos=d/2+0.02;  % rho center position of plate
+p.plate2.zpos=d/2+0.005;      % z position of plate
 p.plate2.V=300;              % voltage on plate
 
 p.plate3.width=plat_diam;         % diameter of plate
-p.plate3.rhopos=d/2-0.013;  % rho center position of plate
-p.plate3.zpos=d/2-0.01;      % z position of plate
+p.plate3.rhopos=d/2-0.02;  % rho center position of plate
+p.plate3.zpos=d/2-0.005;      % z position of plate
 p.plate3.V=0;             % voltage on plate
 
 p.plate4.width=plat_diam;         % diameter of plate
-p.plate4.rhopos=d/2+0.013;  % rho center position of plate
-p.plate4.zpos=d/2-0.01;      % z position of plate
+p.plate4.rhopos=d/2+0.02;  % rho center position of plate
+p.plate4.zpos=d/2-0.005;      % z position of plate
 p.plate4.V=300;              % voltage on plate
 
 p.optic.width=0.04;          % optic diameter
-p.optic.thickness=0.015;     % optic thickness
+p.optic.thickness=0.007;     % optic thickness
 p.optic.rhopos_com=d/2;      % optic center of mass position
 p.optic.zpos_com=d/2;        % optic center of mass position
 %p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
