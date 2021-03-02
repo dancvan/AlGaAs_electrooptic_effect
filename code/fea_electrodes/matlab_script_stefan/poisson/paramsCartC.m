@@ -18,32 +18,35 @@ p.expBC.use=true;            % boolean use exponential BC?
 p.expBC.R0=1e5;              % exponential BC drop-off characteristic dist
 p.expBC.V0=0;                % exponential BC drop-off target voltage
 
+plat_diam = 0.02; 
 
-p.plate1.width=0.02;         % diameter of plate
-p.plate1.rhopos=d/2-0.0125;  % rho center position of plate
+
+p.plate1.width=plat_diam;         % diameter of plate
+p.plate1.rhopos=d/2-0.013;  % rho center position of plate
 p.plate1.zpos=d/2+0.01;      % z position of plate
-p.plate1.V=-0.5;             % voltage on plate
+p.plate1.V=0;             % voltage on plate
 
-p.plate2.width=0.02;         % diameter of plate
-p.plate2.rhopos=d/2+0.0125;  % rho center position of plate
+p.plate2.width=plat_diam;         % diameter of plate
+p.plate2.rhopos=d/2+0.013;  % rho center position of plate
 p.plate2.zpos=d/2+0.01;      % z position of plate
-p.plate2.V=0.5;              % voltage on plate
+p.plate2.V=300;              % voltage on plate
 
-p.plate3.width=0.02;         % diameter of plate
-p.plate3.rhopos=d/2-0.0125;  % rho center position of plate
+p.plate3.width=plat_diam;         % diameter of plate
+p.plate3.rhopos=d/2-0.013;  % rho center position of plate
 p.plate3.zpos=d/2-0.01;      % z position of plate
-p.plate3.V=-0.5;             % voltage on plate
+p.plate3.V=0;             % voltage on plate
 
-p.plate4.width=0.02;         % diameter of plate
-p.plate4.rhopos=d/2+0.0125;  % rho center position of plate
+p.plate4.width=plat_diam;         % diameter of plate
+p.plate4.rhopos=d/2+0.013;  % rho center position of plate
 p.plate4.zpos=d/2-0.01;      % z position of plate
-p.plate4.V=0.5;              % voltage on plate
+p.plate4.V=300;              % voltage on plate
 
 p.optic.width=0.04;          % optic diameter
 p.optic.thickness=0.015;     % optic thickness
 p.optic.rhopos_com=d/2;      % optic center of mass position
 p.optic.zpos_com=d/2;        % optic center of mass position
-p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
+%p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
+p.optic.eps=13.436;            % dielectric constant of AlGaAs (D. E. Aspnes, S. M. Kelso, R. A. Logan and R. Bhat. Optical properties of AlxGa1-xAs, J. Appl. Phys. 60, 754-767 (1986))
 
 
 p.boundaryConditionModel=1;  % select boundary condition model code

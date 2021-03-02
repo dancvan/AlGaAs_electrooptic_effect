@@ -9,7 +9,7 @@ global LAP GRADrho GRADz GRADrhop GRADzp GRADrhom GRADzm
 global Drhop Drhom Dzp Dzm
 global p isCyl
 p=parameters();
-isCyl=strcmp(p.sim.coordsys,'cylindrical');
+isCyl=strcmp(p.sim.coordsys,'cartesian');
 
 edgeBCset=false;
 
@@ -81,16 +81,26 @@ for itr=1:p.sim.total_iter
 end
 end
 
+mkdir(datestr(today('datetime')))
+curr_dir = [pwd '/' datestr(today('datetime')) '/']
+
 figure(1);
 plotField(V);
+saveas(figure(1),[curr_dir datestr((today('datetime'))) '_potential_map']);
 
 figure(11); plotXsec(p.xsec1);
+saveas(figure(11),[curr_dir datestr((today('datetime'))) '_center_of_optic']);
+
 figure(12); plotXsec(p.xsec2);
+saveas(figure(12),[curr_dir datestr((today('datetime'))) '_edge_of_hole']);
 %figure(13); plotXsec(p.xsec3);
 %figure(14); plotXsec(p.xsec4);
 figure(15); plotXsec(p.xsec5);
+saveas(figure(15),[curr_dir datestr((today('datetime'))) '_halfway_out_on_optic']);
 figure(21); plotXsec(p.xsec11);
+saveas(figure(21),[curr_dir datestr((today('datetime'))) '_front_plate']);
 figure(22); plotXsec(p.xsec12);
+saveas(figure(22),[curr_dir datestr((today('datetime'))) '_front_of_optic']);
 %figure(23); plotXsec(p.xsec13);
 %figure(24); plotXsec(p.xsec14);
 %figure(25); plotXsec(p.xsec15);

@@ -4,9 +4,9 @@ function p=paramsCyl()
 
 % simulation parameters
 p.sim.coordsys='cylindrical';% type of coordinate system
-p.sim.Size=0.016;            % thickness and radius of simulation box
+p.sim.Size=0.020;            % thickness and radius of simulation box
 %p.sim.N=321;                 % number of points - hires
-p.sim.N=161;                 % number of points - lores
+p.sim.N=201;                 % number of points - lores
 p.sim.total_iter=100000;     % total iterations
 p.sim.update_iter=5000;      % iterations between drawing updates
 p.sim.iter_stepsize=0.1;     % dimensionless iteration step size parameter
@@ -15,7 +15,7 @@ d=p.sim.Size;
 
 
 p.expBC.use=true;            % boolean use exponential BC?
-p.expBC.R0=0.15;              % exponential BC drop-off characteristic dist
+p.expBC.R0=.015;             % exponential BC drop-off characteristic dist
 p.expBC.V0=0;                % exponential BC drop-off target voltage
 
 
@@ -34,7 +34,8 @@ p.plate2.V=-150.0;             % voltage on back plate
 p.optic.diameter=0.0254;     % optic diameter
 p.optic.thickness=0.007;     % optic thickness
 p.optic.zpos_com=d/2;        % optic center of mass position
-p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
+%p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
+p.optic.eps=13.436;            % dielectric constant of AlGaAs (D. E. Aspnes, S. M. Kelso, R. A. Logan and R. Bhat. Optical properties of AlxGa1-xAs, J. Appl. Phys. 60, 754-767 (1986))
 
 
 p.boundaryConditionModel=0;  % select boundary condition model code
