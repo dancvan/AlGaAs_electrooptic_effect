@@ -30,6 +30,7 @@ __pycache__
 .pytest_cache
 src
 
+*.icloud
 *.swp
 *.map
 .idea/
