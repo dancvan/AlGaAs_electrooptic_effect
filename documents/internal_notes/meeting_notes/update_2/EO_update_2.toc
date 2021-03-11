@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Electrode plate design concept}{3}{0}{1}
+\beamer@sectionintoc {2}{Circular electrode plate with central hole}{4}{0}{2}
+\beamer@sectionintoc {3}{Electrode / Sample mount}{8}{0}{3}

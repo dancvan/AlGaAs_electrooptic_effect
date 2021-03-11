@@ -1,0 +1,17 @@
+Stefan suggested looking at whether the frequency noise of the mephisto to see if it would be a limiting factor of our measurment
+* When looking into frequency noise, you may ask how that would couple into our phase measurement?
+* A key is to see how the circulating power differs when adjusting the frequency or the effective optical length of the cavity (see notes for calculating the circulating power and verifying that a change in frequency is equivalent to changing the effective optical length of the cavity)
+* Once it was established that a change in frequency was equivalent to a change of effective optical length of the cavity, in terms of circulating power, we can calculate if the optical length change that we wish to measure relative to the total length of the cavity is larger than the change in frequency relative to the frequency of the laser. 
+* Marty estimates that the change in optical length is 4.5e-10 m/V so I'll assume that for a half a meter cavity that the effect will be 9e-10 
+* I estimate based on the specs sheet that a 1MHz change to a 281e12 Hz laser is around 3.54e-9
+    - INCORRECT
+    - This initial estimate is based on the slew rate of the laser
+* The frequency noise of the laser is characterized in the mephisto spec sheets as a spectrum from 1Hz to 10 kHz 
+    - How to translate this Hz/\sqrt(Hz) figure into phase noise?
+    - Let's disentangle the figure....
+    - The PSD for frequency noise essentially states how large the frequency wiggles at a particular frequency (feels kinda meta), but then again, what does this tell us about our phase noise?
+    - We know that we can characterize length noise by taking the ratio of the change in length over the length, and equivalently we can do the same for frequency (take the change in frequency over the frequency to get frequency noise). But this doesn't seem explicit from the spectrum. the frequency noise is weighted by the amount of power it has in the spectrum... how to express that?
+    - Let's start with the largest value in the freqeuncy amplitude noise spectrum, say 10^4 Hz/sqrt(Hz), let's translate this into phase noise:
+        ~ the amplitude around 1Hz is 10^4 which means that there should be 10,000 Hz deviation around 1Hz?
+        ~ This is definitely the case. Let's take the largest frequency variation and work with that in termso our our above expression: 
+        ~ (10,000)/()

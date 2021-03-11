@@ -1,0 +1,1 @@
+This directory has all information regarding the construction and design of a custom circuit board with an adjustable non-inverting amplifier with a probe stage that reduces the amplifer output (orders of magnitude smaller via a voltage divider). 

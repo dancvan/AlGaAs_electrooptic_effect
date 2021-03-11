@@ -1,0 +1,1 @@
+SCRN0012 and SCRN0013 were taken by stefan. It is the error signal spectra (while locked) measured at the SR560 configured for unity gain (treated as a summer). One of them is measured at the input while the other is the output. 

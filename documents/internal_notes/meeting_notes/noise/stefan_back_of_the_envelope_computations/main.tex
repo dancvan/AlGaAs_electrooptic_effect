@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{EON back of the envelope noise computation}
+\author{Daniel Vander-Hyde (interpreted from notes by Stefan Ballmer)}
+\date{September 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Listing Marty's figure}
+For a entire stratified surface of AlGaAs with alternating layers of 10 \% and 90 \% Al concentration the estimated Electro-optic noise contribution:
+
+$$ \frac{d \phi}{dE} = 4.5*10^{-10} $$
+
+which.. in terms of a physical length from a double pass through the coating:
+$$\phi *2*k*\Delta x = \frac{4 \pi* \Delta x}{\lambda}$$
+
+so the following is the estimated length change as we change the incident electric field: 
+
+$$ \frac{d x}{dE} =3.8101*10^{-17}$$
+
+Say we assume a 0th order field from our capacitor system that we are developing:
+\\
+\\
+For a 100 Vpk potential difference across a 1cm separation capacitor we have a field of 10,000 [V/m]
+\\
+\\ 
+This then implies a peak length change of $3.8*10^{-13}\; [m]$
+\\
+\\ 
+Now let's convert this into a Power
+\section{Conclusion}
+``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

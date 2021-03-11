@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{How big is the Piezoelectric effect?}{3}{0}{1}
+\beamer@sectionintoc {2}{Competing with laser frequency noise}{4}{0}{2}
+\beamer@sectionintoc {3}{Electrode / Sample mount}{8}{0}{3}
