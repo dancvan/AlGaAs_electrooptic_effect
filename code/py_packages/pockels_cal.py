@@ -5,7 +5,9 @@ from matplotlib import rc
 import os
 import h5py
 
-plt.style.use('/Users/daniel_vander-hyde/Documents/git/my_python/matplotlib/stylelib/pptsize')
+plt_style_dir = '/Users/daniel_vander-hyde/Documents/git/my_python/matplotlib/stylelib/pptsize'
+if os.path.isdir(plt_style_dir) == True:
+    plt.style.use(plt_style_dir)
 
 def concat_vecs(directory):
     txtcounter = len(glob.glob1(directory,"*.TXT"))
@@ -88,6 +90,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
     This function undergoes the AlGaAs electro-optic experiment calibration to convert the error signal voltage spectra from the PDH loop into a displacement spectra. The function takes multiple directories as inputs which contain
     the necessary spectra and transfer functions. The output compresses all of the raw datasets, some intermediate datasets and calibrated voltage
     """
+
     #Make final directory
     labl = date + '_' + meas_type + '_' + spectra_type
     new_final_dir = final_dir + '/' + labl
@@ -100,11 +103,9 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
   #  if os.path.isdir(calib_data) == False:
   #      os.mkdir(calib_data_dir)
 
-    plt.style.use('/Users/daniel_vander-hyde/Documents/git/my_python/matplotlib/stylelib/pptsize')
-
     #Common_directories
-    HVA_common_dir = '/Users/daniel_vander-hyde/Documents/git/SU/algaas_electrooptic_effect/measurements/HVASVR_tf/'
-    OLG_common_dir = '/Users/daniel_vander-hyde/Documents/git/SU/algaas_electrooptic_effect/measurements/OLG/algaas/'
+    HVA_common_dir = '../measurements/HVASVR_tf/'
+    OLG_common_dir = '../measurements/OLG/algaas/'
     HVA_dir = HVA_common_dir + 'HVACH3_plus_pomona/' + date + '/'
     #OLG_dir = OLG_common_dir + date + '/'
     OLG_dir = OLG_common_dir + date + '/'
@@ -115,7 +116,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
     if meas_type == 'swept':
         #HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
         HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
-        Electcap_dir = '/Users/daniel_vander-hyde/Documents/git/SU/algaas_electrooptic_effect/measurements/Electrode_capacitence_measurements/03_11_2020/'
+        Electcap_dir = '../measurements/Electrode_capacitence_measurements/03_11_2020/'
         #Import the measured tf from SR785
         meas_swep = tf_import(meas_data_dir)
         if plot_saving == True:
