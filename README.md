@@ -3,6 +3,9 @@ This repository is intended to hold all related notes/work related to the measur
 
 Navigating this repository:
 
+3D_prints:
+- Contains all 3D printed designs used for this experiment (file formats: .stl, .shapr)
+
 code:
 - notebooks -> a high number of jupyter notebooks primarily used for quick computations and plotting. For instance, one notebook in lab_tools called beam_scans provides an easy routine to do a least squares fit from an .xlsx file.  
 - fea_electrodes -> directory contains all files related to the simulation of the electrode system to produce a reasonable electric field estimate within the AlGaAs coating (both disk and split electrode systems)
