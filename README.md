@@ -1,12 +1,10 @@
-# AlGaAs_electro-optic_effect
+#AlGaAs_electro-optic_effect
 This repository is intended to hold all related notes/work related to the measurement of the electro-optic effects (both the pockels and the piezoelectric effects) at the SU gravitational wave physics lab
 
 Navigating this repository:
 
 3D_prints:
 - Contains all 3D printed designs used for this experiment (file formats: .stl, .shapr)
-
-# <script src="https://embed.github.com/view/3d/dancvan/AlGaAs_electrooptic_effect/blob/master/3D_prints/design_v1/optic_and_electrode_mount_orthoplanar_spring.stl"></script>
 
 code:
 - notebooks -> a high number of jupyter notebooks primarily used for quick computations and plotting. For instance, one notebook in lab_tools called beam_scans provides an easy routine to do a least squares fit from an .xlsx file.  
