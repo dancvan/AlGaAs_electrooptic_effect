@@ -5,9 +5,9 @@ from matplotlib import rc
 import os
 import h5py
 
-plt_style_dir = '/Users/daniel_vander-hyde/Documents/git/my_python/matplotlib/stylelib/pptsize'
+plt_style_dir = '/Users/daniel_vander-hyde/Documents/git/my_python/matplotlib/stylelib/'
 if os.path.isdir(plt_style_dir) == True:
-    plt.style.use(plt_style_dir)
+    plt.style.use(plt_style_dir + 'pptsize')
 
 def concat_vecs(directory):
     txtcounter = len(glob.glob1(directory,"*.TXT"))
@@ -85,14 +85,18 @@ def bode_plt(tf_tuple, save_path, lbl, title, ylbl='dB'):
     return bode_fig
 
 
-def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk', plot_saving=False, model=False):
+def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk', sample='algaas', plot_saving=False, model=False):
     """
     This function undergoes the AlGaAs electro-optic experiment calibration to convert the error signal voltage spectra from the PDH loop into a displacement spectra. The function takes multiple directories as inputs which contain
     the necessary spectra and transfer functions. The output compresses all of the raw datasets, some intermediate datasets and calibrated voltage
     """
 
+    plt_style_dir = '/Users/daniel_vander-hyde/Documents/git/my_python/matplotlib/stylelib/'
+    if os.path.isdir(plt_style_dir) == True:
+        plt.style.use(plt_style_dir + 'pptsize')
+
     #Make final directory
-    labl = date + '_' + meas_type + '_' + spectra_type
+    labl = date + '_' + meas_type + '_' + spectra_type + '_' + sample
     new_final_dir = final_dir + '/' + labl
   #  figure_dir = new_final_dir + '/figs'
   #  calib_data_dir = new_final_dir + '/data'
@@ -104,19 +108,23 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
   #      os.mkdir(calib_data_dir)
 
     #Common_directories
-    HVA_common_dir = '../measurements/HVASVR_tf/'
-    OLG_common_dir = '../measurements/OLG/algaas/'
+    HVA_common_dir = '../../measurements/HVASVR_tf/'
+    OLG_common_dir = '../../measurements/OLG/'
     HVA_dir = HVA_common_dir + 'HVACH3_plus_pomona/' + date + '/'
     #OLG_dir = OLG_common_dir + date + '/'
-    OLG_dir = OLG_common_dir + date + '/'
+    OLG_dir = OLG_common_dir + sample + '/' + date + '/'
 
     HVA = tf_import(HVA_dir)
     OLG = tf_import(OLG_dir)
     #If the data is a swept frequency measurement
     if meas_type == 'swept':
         #HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
-        HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
-        Electcap_dir = '../measurements/Electrode_capacitence_measurements/03_11_2020/'
+        HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/'
+        electrode_type = 'disk'
+        if sample == 'sio2ta2o5':
+            Electcap_dir = '../../measurements/electrode_capacitence/' + electrode_type + '/' + sample + '/03_12_2021/'
+        else:
+            Electcap_dir = '../../measurements/electrode_capacitence/' + electrode_type + '/' + sample + '/03_10_2021/'
         #Import the measured tf from SR785
         meas_swep = tf_import(meas_data_dir)
         if plot_saving == True:
