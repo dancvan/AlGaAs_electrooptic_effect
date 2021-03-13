@@ -1,0 +1,3 @@
+If this directory changes, make sure to change:
+
+/Users/daniel_vander-hyde/anaconda3/envs/jupy/lib/python3.7/site-packages/my-paths.pth
