@@ -6,7 +6,7 @@ Navigating this repository:
 3D_prints:
 - Contains all 3D printed designs used for this experiment (file formats: .stl, .shapr)
 
-<script src="https://embed.github.com/view/3d/dancvan/AlGaAs_electrooptic_effect/master/3D_prints/design_v1/optic_and_electrode_mount_orthoplanar_spring.stl"></script>
+<script src="https://embed.github.com/view/3d/dancvan/AlGaAs_electrooptic_effect/blob/master/3D_prints/design_v1/optic_and_electrode_mount_orthoplanar_spring.stl"></script>
 
 code:
 - notebooks -> a high number of jupyter notebooks primarily used for quick computations and plotting. For instance, one notebook in lab_tools called beam_scans provides an easy routine to do a least squares fit from an .xlsx file.  
