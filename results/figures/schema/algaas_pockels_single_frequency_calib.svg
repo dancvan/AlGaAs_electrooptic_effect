@@ -33,8 +33,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1599082"
-     inkscape:cx="435.93787"
-     inkscape:cy="557.4971"
+     inkscape:cx="441.11069"
+     inkscape:cy="437.66003"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      width="1052.3622px"
@@ -17541,6 +17541,19 @@
          style="stop-color:#BA0000"
          offset="0.6854" />
     </radialGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6548"
+       x="-0.025849597"
+       width="1.0516992"
+       y="-0.016685018"
+       height="1.03337">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.74385065"
+         id="feGaussianBlur6550" />
+    </filter>
   </defs>
   <metadata
      id="metadata7">
@@ -17550,7 +17563,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
       <cc:Work
          rdf:about="">
@@ -21232,9 +21245,9 @@
           </linearGradient>
           <path
              id="path5106"
-             d="M 43.146,1.854 C 43.146,2.475 43.543,2.978 44.035,2.978 C 43.796,2.978 43.646,2.821 43.613,2.765 C 44.343,3.968 44.949,13.45 45.39,20.372 C 46.457,37.101 46.895,39.828 48.516,39.828 C 49.006,39.828 49.404,39.325 49.404,38.704 C 49.404,38.083 49.007,37.58 48.516,37.58 C 48.755,37.58 48.905,37.737 48.938,37.793 C 48.208,36.59 47.603,27.111 47.162,20.19 C 46.094,3.458 45.655,0.73 44.034,0.73 C 43.543,0.73 43.146,1.233 43.146,1.854 z "
+             d="m 43.146,1.854 c 0,0.621 0.397,1.124 0.889,1.124 -0.239,0 -0.389,-0.157 -0.422,-0.213 0.73,1.203 1.336,10.685 1.777,17.607 1.067,16.729 1.505,19.456 3.126,19.456 0.49,0 0.888,-0.503 0.888,-1.124 0,-0.621 -0.397,-1.124 -0.888,-1.124 0.239,0 0.389,0.157 0.422,0.213 C 48.208,36.59 47.603,27.111 47.162,20.19 46.094,3.458 45.655,0.73 44.034,0.73 c -0.491,0 -0.888,0.503 -0.888,1.124 z"
              i:knockout="Off"
-             style="fill:url(#XMLID_23_);stroke:black;stroke-width:0.5" />
+             style="fill:url(#XMLID_23_);stroke:#ff0000;stroke-width:0.5" />
         </g>
         <g
            id="g5108"
@@ -35681,23 +35694,5 @@
          y="402.34613">DCPD<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan15069">trans</tspan></tspan></text>
-    <text
-       inkscape:export-filename="/Users/daniel_vander-hyde/algaas_pockels_swept_frequency_calib.png"
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.472px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02954;enable-background:new"
-       x="799.01849"
-       y="544.43628"
-       id="text36749-3-6"
-       transform="scale(0.9713073,1.0295403)"
-       inkscape:export-xdpi="117.87067"
-       inkscape:export-ydpi="117.87067"><tspan
-         sodipodi:role="line"
-         id="tspan16048"
-         x="799.01849"
-         y="544.43628">3-30 kHz</tspan><tspan
-         sodipodi:role="line"
-         id="tspan16050"
-         x="799.01849"
-         y="565.02631"></tspan></text>
   </g>
 </svg>
