@@ -311,7 +311,7 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
         hvatf_save = f.create_group("calibrated/hva")
         hvach3tf_save = f.create_dataset("calibrated/hva/ch3+pomona",data=HVA_tf)
         olgtf_save = f.create_dataset("calibrated/olg",data=OLG_tf)
-        freqnoise_save = f.create_dataset("calibrated/HzpV",data=freq_noise)
+        freqnoise_save = f.create_dataset("calibrated/HzpV",data=CALHzpV)
         if meas_type == 'swept':
             hvach1tf_save = f.create_dataset("calibrated/hva/ch1",data=HVA_CH1_tf)
             displacement_spect = f.create_dataset("calibrated/disp_spect_unnorm", data=displac_spect_unnorm[1])
