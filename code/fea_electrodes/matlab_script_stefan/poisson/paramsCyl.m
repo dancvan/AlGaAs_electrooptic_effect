@@ -34,8 +34,8 @@ p.plate2.V=-150.0;             % voltage on back plate
 p.optic.diameter=0.0254;     % optic diameter
 p.optic.thickness=0.007;     % optic thickness
 p.optic.zpos_com=d/2;        % optic center of mass position
-%p.optic.eps=3.82;            % dielectric constant of optic (eps=1+chi)
-p.optic.eps=13.436;            % dielectric constant of AlGaAs (D. E. Aspnes, S. M. Kelso, R. A. Logan and R. Bhat. Optical properties of AlxGa1-xAs, J. Appl. Phys. 60, 754-767 (1986))
+%p.optic.eps=3.82;           % dielectric constant of optic (eps=1+chi)
+p.optic.eps=13.436;          % dielectric constant of AlGaAs (D. E. Aspnes, S. M. Kelso, R. A. Logan and R. Bhat. Optical properties of AlxGa1-xAs, J. Appl. Phys. 60, 754-767 (1986))
 
 
 p.boundaryConditionModel=0;  % select boundary condition model code

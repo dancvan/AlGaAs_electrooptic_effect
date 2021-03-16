@@ -9,7 +9,7 @@ global LAP GRADrho GRADz GRADrhop GRADzp GRADrhom GRADzm
 global Drhop Drhom Dzp Dzm
 global p isCyl
 p=parameters();
-isCyl=strcmp(p.sim.coordsys,'cartesian');
+isCyl=strcmp(p.sim.coordsys,'cylindrical');
 
 edgeBCset=false;
 
@@ -81,8 +81,8 @@ for itr=1:p.sim.total_iter
 end
 end
 
-mkdir(datestr(today('datetime')))
-curr_dir = [pwd '/' datestr(today('datetime')) '/']
+mkdir(['../../../../results/simulations/electrodes/disk' '/' datestr(today('datetime'))])
+curr_dir = ['../../../../results/simulations/electrodes/disk' '/' datestr(today('datetime')) '/']
 
 figure(1);
 plotField(V);
