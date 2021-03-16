@@ -33,10 +33,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1599082"
-     inkscape:cx="441.11069"
-     inkscape:cy="437.66003"
+     inkscape:cx="299.28912"
+     inkscape:cy="461.79987"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer4"
      width="1052.3622px"
      height="744.09449px"
      inkscape:window-width="2560"
@@ -44,7 +44,7 @@
      inkscape:window-x="0"
      inkscape:window-y="25"
      showgrid="true"
-     showguides="false"
+     showguides="true"
      gridanglex="8.4666669mm"
      gridanglez="8.4666669mm"
      grid_units="mm"
@@ -74,6 +74,10 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true" />
+    <sodipodi:guide
+       position="-531.93865,735.47311"
+       orientation="1,0"
+       id="guide19016" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -17541,19 +17545,6 @@
          style="stop-color:#BA0000"
          offset="0.6854" />
     </radialGradient>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter6548"
-       x="-0.025849597"
-       width="1.0516992"
-       y="-0.016685018"
-       height="1.03337">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.74385065"
-         id="feGaussianBlur6550" />
-    </filter>
   </defs>
   <metadata
      id="metadata7">
@@ -17612,7 +17603,9 @@
        style="fill:#ffb6ff;fill-opacity:1;stroke:none;stroke-width:1.12919;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        inkscape:path-effect="#path-effect10816"
        d="m 46.82982,349.85989 h 71.80227 a 17.476688,17.476688 45 0 1 17.47669,17.47669 v 119.051 a 15.358302,15.358302 135 0 1 -15.3583,15.3583 H 45.770626 A 14.299108,14.299108 45 0 1 31.471518,487.44677 V 365.2182 A 15.358302,15.358302 135 0 1 46.82982,349.85989 Z"
-       sodipodi:type="rect" />
+       sodipodi:type="rect"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <rect
        inkscape:export-filename="/Users/daniel_vander-hyde/algaas_pockels_swept_frequency_calib.png"
        style="display:inline;opacity:0.98;fill:#ff0000;fill-opacity:0.291829;stroke:#000000;stroke-width:3.17645;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.0077821;enable-background:new"
@@ -17628,7 +17621,9 @@
     <g
        style="display:inline;enable-background:new"
        id="g5154-8"
-       transform="translate(332.88056,502.28657)">
+       transform="translate(332.88056,502.28657)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <radialGradient
          id="radialGradient10714"
          cx="14.5483"
@@ -17736,24 +17731,32 @@
     <path
        style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6573)"
        d="M 279.33245,420.1314 V 392.54301"
-       id="path11615" />
+       id="path11615"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <path
        inkscape:original-d="m 733.22835,468.66141 c -12.2469,-0.1907 -25.19585,0.001 -37.79527,0 -0.22744,-17.27026 10e-4,-35.27459 0,-52.91338"
        inkscape:path-effect="#path-effect6772"
        inkscape:connector-curvature="0"
        id="path6770"
        d="m 733.22835,468.66141 c -12.2469,0 -25.19585,0 -31.49556,-8.63513 -6.29971,-8.63513 -6.29971,-26.63946 -6.29971,-44.27825"
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker14207);enable-background:new" />
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker14207);enable-background:new"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <path
        inkscape:original-d="m 285.26394,583.03342 c -58.23332,0.80778 -114.51359,10e-4 -171.77193,0 -16.22557,0.22618 -31.230221,10e-4 -46.846883,0 -0.01161,-70.44 0.001,-141.74638 0,-212.62109 14.639905,-0.43731 31.232289,10e-4 46.846883,0"
        inkscape:path-effect="#path-effect7147"
        inkscape:connector-curvature="0"
        id="path7145"
        d="m 285.26394,583.03342 c -58.23332,0 -114.51359,0 -151.25555,0 -36.74195,0 -51.746601,0 -59.554932,-35.22 -7.808331,-35.22 -7.808331,-106.52638 -0.488378,-141.96373 7.319952,-35.43736 23.912336,-35.43736 39.52693,-35.43736"
-       style="enable-background:new;display:inline;fill:none;stroke:#000000;stroke-width:1.92044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13270);marker-mid:url(#marker13270)" />
+       style="enable-background:new;display:inline;fill:none;stroke:#000000;stroke-width:1.92044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker13270);marker-mid:url(#marker13270)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <g
        id="g16089"
-       transform="translate(0.8621372,13.137863)">
+       transform="translate(0.8621372,13.137863)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <path
          style="display:inline;fill:#ffffff;stroke:#ffccaa;stroke-width:6.03352;stroke-miterlimit:4;stroke-dasharray:none;enable-background:new"
          i:knockout="Off"
@@ -19164,7 +19167,9 @@
        i:layer="yes"
        i:dimmedPercent="50"
        i:rgbTrio="#4F008000FFFF"
-       style="display:inline;enable-background:new">
+       style="display:inline;enable-background:new"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <g
          id="g4829-6">
         <radialGradient
@@ -19268,7 +19273,9 @@
        i:layer="yes"
        i:dimmedPercent="50"
        i:rgbTrio="#4F008000FFFF"
-       style="display:inline;enable-background:new">
+       style="display:inline;enable-background:new"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <g
          id="g5041-1">
         <radialGradient
@@ -19320,16 +19327,22 @@
        inkscape:connector-curvature="0"
        id="path6766"
        d="m 780.14174,514.01574 c 0,-15.01933 0,-30.23522 -3.21854,-37.79477 -3.21855,-7.55956 -11.89857,-7.55956 -19.45862,-7.55956"
-       style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-mid:url(#marker13878)" />
+       style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-mid:url(#marker13878)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <polygon
        transform="matrix(-1,0,0,1,293.5101,563.99077)"
        id="polygon4687-0"
        points="32.266,19.062 0.375,37.473 0.375,0.65 "
        i:knockout="Off"
-       style="display:inline;fill:url(#radialGradient4704-1);fill-opacity:1;stroke:#000000;stroke-width:0.75;enable-background:new" />
+       style="display:inline;fill:url(#radialGradient4704-1);fill-opacity:1;stroke:#000000;stroke-width:0.75;enable-background:new"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <g
        id="g10833"
-       transform="translate(-74.862137,-108.86214)">
+       transform="translate(-74.862137,-108.86214)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <polygon
          id="polygon5028-6"
          points="0.75,19.061 32.64,37.471 32.64,0.649 "
@@ -19354,7 +19367,9 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g4869-8"
-       transform="translate(265.6076,420.01403)">
+       transform="translate(265.6076,420.01403)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <g
          id="g4829-1">
         <radialGradient
@@ -19454,19 +19469,25 @@
     <path
        style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker13014);stroke-miterlimit:4;stroke-dasharray:none"
        d="m 279.33245,449.17346 c 0,66.38456 53.4525,66.38456 53.4525,66.38456"
-       id="path12736" />
+       id="path12736"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker12752)"
        d="m 419.86081,422.17148 c 0,12.07092 0,24.14084 -5.60351,30.1753 -5.6035,6.03446 -16.81106,6.03446 -22.55915,15.51865 -5.74809,9.48419 -6.03546,28.45083 -10.05836,38.07753 -4.0229,9.62669 -11.78198,9.91406 -19.54218,10.20147"
        id="path12740"
        inkscape:path-effect="#path-effect12742"
-       inkscape:original-d="m 419.86081,422.17148 c 10e-4,12.07092 10e-4,24.14084 0,36.20976 -11.20701,0.001 -22.41457,0.001 -33.62335,0 -0.28639,18.9684 -0.57376,37.93504 -0.86214,56.90106 -7.75839,0.28838 -15.51747,0.57575 -23.27771,0.86213" />
+       inkscape:original-d="m 419.86081,422.17148 c 10e-4,12.07092 10e-4,24.14084 0,36.20976 -11.20701,0.001 -22.41457,0.001 -33.62335,0 -0.28639,18.9684 -0.57376,37.93504 -0.86214,56.90106 -7.75839,0.28838 -15.51747,0.57575 -23.27771,0.86213"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.84683;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker14761)"
        d="m 348.63068,532.17855 c 0,16.71107 0,33.42118 -8.49391,41.77575 -8.4939,8.35458 -25.48204,8.35458 -42.47153,8.35458"
        id="path15198"
        inkscape:path-effect="#path-effect15200"
-       inkscape:original-d="m 348.63068,532.17855 c 0.001,16.71107 0.001,33.42118 0,50.13033 -16.98781,9.5e-4 -33.97595,9.5e-4 -50.96544,0" />
+       inkscape:original-d="m 348.63068,532.17855 c 0.001,16.71107 0.001,33.42118 0,50.13033 -16.98781,9.5e-4 -33.97595,9.5e-4 -50.96544,0"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <text
        inkscape:export-filename="/Users/daniel_vander-hyde/algaas_pockels_swept_frequency_calib.png"
        inkscape:export-ydpi="117.87067"
@@ -19489,7 +19510,9 @@
        d="m 136.8307,589.29062 c 0,17.25885 0,34.51683 4.88614,43.27046 4.88613,8.75363 14.65698,9.00374 78.74475,9.12878 64.08776,0.12505 182.48751,0.12505 249.30439,0.12505 66.81689,0 82.04793,0 89.6631,-5.50222 7.61517,-5.50222 7.61517,-16.50709 7.61517,-27.51305"
        id="path15281"
        inkscape:path-effect="#path-effect15283"
-       inkscape:original-d="m 136.8307,589.29062 c 0.001,17.25885 0.001,34.51683 0,51.77394 9.77225,0.25099 19.5431,0.50111 29.31315,0.75035 118.4055,8.7e-4 236.80525,8.7e-4 355.20638,0 15.23264,8.7e-4 30.46368,8.7e-4 45.69402,0 10e-4,-11.00444 10e-4,-22.00931 0,-33.01527" />
+       inkscape:original-d="m 136.8307,589.29062 c 0.001,17.25885 0.001,34.51683 0,51.77394 9.77225,0.25099 19.5431,0.50111 29.31315,0.75035 118.4055,8.7e-4 236.80525,8.7e-4 355.20638,0 15.23264,8.7e-4 30.46368,8.7e-4 45.69402,0 10e-4,-11.00444 10e-4,-22.00931 0,-33.01527"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
     <text
        inkscape:export-ydpi="117.87067"
        inkscape:export-xdpi="117.87067"
@@ -19505,7 +19528,9 @@
          y="443.05988">G(f)</tspan></text>
     <g
        id="g16144"
-       transform="rotate(90,773.02834,342.16554)">
+       transform="rotate(90,773.02834,342.16554)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <path
          style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 766.16423,300.88586 c 0,8.04762 0,16.09423 0,24.13984"
@@ -19530,7 +19555,9 @@
        d="m 720.57584,329.02571 c -0.28734,-7.7582 -0.57472,-15.51743 13.22023,-19.25387 13.79496,-3.73644 41.67018,-3.44907 55.60756,1.58066 13.93737,5.02972 13.93737,14.80042 13.93737,24.5703"
        id="path16146"
        inkscape:path-effect="#path-effect16148"
-       inkscape:original-d="m 720.57584,329.02571 c -0.28638,-7.75824 -0.57376,-15.51747 -0.86214,-23.27771 27.87732,0.28839 55.75254,0.57576 83.6273,0.86214 10e-4,9.77208 10e-4,19.54278 0,29.31266" />
+       inkscape:original-d="m 720.57584,329.02571 c -0.28638,-7.75824 -0.57376,-15.51747 -0.86214,-23.27771 27.87732,0.28839 55.75254,0.57576 83.6273,0.86214 10e-4,9.77208 10e-4,19.54278 0,29.31266"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -34771,25 +34798,21 @@
        inkscape:export-filename="/Users/daniel_vander-hyde/algaas_pockels_swept_frequency_calib.png"
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="683.43311"
-       y="283.96851"
+       x="681.43311"
+       y="297.96851"
        id="text36673"
        inkscape:export-xdpi="117.87067"
        inkscape:export-ydpi="117.87067"><tspan
-         y="283.96851"
-         x="683.43311"
-         id="tspan6707"
-         sodipodi:role="line">AlGaAs </tspan><tspan
-         y="300.63513"
-         x="683.43311"
+         y="297.96851"
+         x="681.43311"
          id="tspan6709"
-         sodipodi:role="line">sample</tspan><tspan
-         y="317.30176"
-         x="683.43311"
+         sodipodi:role="line">Sample</tspan><tspan
+         y="314.63513"
+         x="681.43311"
          id="tspan6711"
          sodipodi:role="line" /><tspan
-         y="333.96838"
-         x="683.43311"
+         y="331.30176"
+         x="681.43311"
          id="tspan6713"
          sodipodi:role="line" /></text>
     <g
@@ -34798,7 +34821,9 @@
        i:dimmedPercent="50"
        i:layer="yes"
        id="g5261-9"
-       transform="translate(756.71889,361.79922)">
+       transform="translate(756.71889,361.79922)"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067">
       <g
          id="g5245-7">
         <radialGradient
@@ -34931,7 +34956,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stop-opacity:1"
        x="430.01688"
        y="426.04712"
-       id="text4107"><tspan
+       id="text4107"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067"><tspan
          style="font-size:16px;line-height:1.25"
          sodipodi:role="line"
          id="tspan4109"
@@ -34942,7 +34969,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stop-opacity:1"
        x="473.95486"
        y="426.26382"
-       id="text5897"><tspan
+       id="text5897"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067"><tspan
          id="tspan35724"
          sodipodi:role="line"
          x="473.95486"
@@ -35686,7 +35715,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:0%;font-family:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        x="744.16229"
        y="402.34613"
-       id="text4107-0"><tspan
+       id="text4107-0"
+       inkscape:export-xdpi="117.87067"
+       inkscape:export-ydpi="117.87067"><tspan
          style="font-size:16px;line-height:1.25"
          sodipodi:role="line"
          id="tspan4109-5"

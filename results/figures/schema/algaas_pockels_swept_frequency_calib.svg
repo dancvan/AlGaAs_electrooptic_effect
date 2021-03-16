@@ -33,10 +33,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1599082"
-     inkscape:cx="474.73405"
-     inkscape:cy="502.32032"
+     inkscape:cx="295.40951"
+     inkscape:cy="604.05251"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer4"
      width="1052.3622px"
      height="744.09449px"
      inkscape:window-width="2560"
@@ -77,6 +77,34 @@
   </sodipodi:namedview>
   <defs
      id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker6521"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path6519" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker6511"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path6509" />
+    </marker>
     <inkscape:path-effect
        effect="bspline"
        id="path-effect40093"
@@ -95,7 +123,8 @@
        refX="0.0"
        refY="0.0"
        orient="auto"
-       inkscape:stockid="Arrow2Mend">
+       inkscape:stockid="Arrow2Mend"
+       inkscape:collect="always">
       <path
          transform="scale(0.6) rotate(180) translate(0,0)"
          d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
@@ -18042,7 +18071,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new;stroke-miterlimit:4;stroke-dasharray:none;marker-mid:url(#marker39819)"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new;stroke-miterlimit:4;stroke-dasharray:none;marker-mid:url(#marker6511)"
        d="m 137.35404,581.07963 c 0,33.05013 0,66.09927 8.86817,82.76704 8.86817,16.66777 26.60281,16.95514 110.70244,16.95513 84.09963,-10e-6 234.55791,-0.28739 317.94109,-0.43108 83.38319,-0.14369 99.6876,-0.14369 108.12551,-10.05814 8.43792,-9.91446 9.01,-29.74355 9.58212,-49.57399"
        id="path40091"
        inkscape:path-effect="#path-effect40093"
@@ -19531,7 +19560,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker39819)"
+       style="fill:none;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker6521)"
        d="m 510.38521,650.32715 c 21.26705,-0.0919 42.5331,-0.18382 57.62059,-0.22978 15.08749,-0.0459 23.99606,-0.0459 28.59361,-5.21839 4.59756,-5.17244 4.88493,-15.51788 5.17234,-25.8645"
        id="path39807"
        inkscape:path-effect="#path-effect39809"
@@ -34811,25 +34840,21 @@
        inkscape:export-filename="/Users/daniel_vander-hyde/Documents/git/SU/algaas_electrooptic_effect/schema/swept_sine_schema/updated/algaas_pockels_swept_frequency_calib.png"
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="683.43311"
-       y="283.96851"
+       x="681.43311"
+       y="297.96851"
        id="text36673"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><tspan
-         y="283.96851"
-         x="683.43311"
-         id="tspan6707"
-         sodipodi:role="line">AlGaAs </tspan><tspan
-         y="300.63513"
-         x="683.43311"
+         y="297.96851"
+         x="681.43311"
          id="tspan6709"
-         sodipodi:role="line">sample</tspan><tspan
-         y="317.30176"
-         x="683.43311"
+         sodipodi:role="line">Sample</tspan><tspan
+         y="314.63513"
+         x="681.43311"
          id="tspan6711"
          sodipodi:role="line" /><tspan
-         y="333.96838"
-         x="683.43311"
+         y="331.30176"
+         x="681.43311"
          id="tspan6713"
          sodipodi:role="line" /></text>
     <g
