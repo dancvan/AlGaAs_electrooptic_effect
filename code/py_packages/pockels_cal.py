@@ -110,16 +110,16 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
     #Common_directories
     HVA_common_dir = '../../measurements/HVASVR_tf/'
     OLG_common_dir = '../../measurements/OLG/'
-    HVA_dir = HVA_common_dir + 'HVACH3_plus_pomona/' + date + '/'
+    HVA_dir = HVA_common_dir + 'HVACH3_plus_pomona/' + date + '/' + 'w_set_screws' + '/'
     #OLG_dir = OLG_common_dir + date + '/'
-    OLG_dir = OLG_common_dir + sample + '/' + date + '/'
+    OLG_dir = OLG_common_dir + sample + '/' + date + '/' + 'w_set_screws' + '/'
 
     HVA = tf_import(HVA_dir)
     OLG = tf_import(OLG_dir)
     #If the data is a swept frequency measurement
     if meas_type == 'swept':
         #HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
-        HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/'
+        HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/' + 'w_set_screws' + '/' 
         electrode_type = 'disk'
         if sample == 'sio2ta2o5':
             Electcap_dir = '../../measurements/electrode_capacitence/' + electrode_type + '/' + sample + '/03_12_2021/'
