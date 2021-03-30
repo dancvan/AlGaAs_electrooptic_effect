@@ -117,22 +117,22 @@ def pock_cal(meas_data_dir, date, final_dir, meas_type='noise', spectra_type='pk
     OLG_dir = OLG_common_dir + sample + '/' + date + '/'
 
     if xtradir != 'none':
-        HVA_dir = HVA_dir + 'state2' + '/'
+        HVA_dir = HVA_dir + xtradir + '/'
         OLG_dir = OLG_dir + xtradir + '/'
 
     HVA = tf_import(HVA_dir)
     OLG = tf_import(OLG_dir)
     #If the data is a swept frequency measurement
     if meas_type == 'swept':
-        HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
-        #HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/'
+        #HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
+        HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/'
 
         if xtradir != 'none':
-            HVA_CH1_dir = HVA_CH1_dir + 'state2' + '/'
+            HVA_CH1_dir = HVA_CH1_dir + xtradir + '/'
 
         electrode_type = 'disk'
         if sample == 'sio2ta2o5':
-            Electcap_dir = '../../measurements/electrode_capacitence/' + electrode_type + '/' + sample + '/03_12_2021/'
+            Electcap_dir = '../../measurements/electrode_capacitence/' + electrode_type + '/' + sample + '/03_29_2021/'
         else:
             Electcap_dir = '../../measurements/electrode_capacitence/' + electrode_type + '/' + sample + '/03_10_2021/'
         #Import the measured tf from SR785
