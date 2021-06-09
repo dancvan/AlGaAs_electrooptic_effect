@@ -19,14 +19,14 @@ p.expBC.R0=.015;             % exponential BC drop-off characteristic dist
 p.expBC.V0=0;                % exponential BC drop-off target voltage
 
 
-p.plate1.diameter=0.0762;      % diameter of front plate
-p.plate1.hole_diameter=0.003;  % hole diameter in front plate
+p.plate1.diameter=0.0762/3;      % diameter of front plate
+p.plate1.hole_diameter=0.004;  % hole diameter in front plate
 p.plate1.zpos=d/2+0.0045;      % z position of front plate
 p.plate1.V=150.0;              % voltage on front plate
 
 
-p.plate2.diameter=0.0762;      % diameter of back plate
-p.plate2.hole_diameter=0.003;  % hole diameter in back plate
+p.plate2.diameter=0.0762/3;      % diameter of back plate
+p.plate2.hole_diameter=0.004;  % hole diameter in back plate
 p.plate2.zpos=d/2-0.0045;      % z position of back plate
 p.plate2.V=-150.0;             % voltage on back plate
 
