@@ -460,7 +460,7 @@ def printname(name):
 
 def h5_peek(h5_file):
     if type(h5_file) == str:
-        h5_data = h5_import(h5)
+        h5_data = h5_import(h5_file)
     else:
         h5_data = h5_file
 
@@ -485,7 +485,7 @@ def qkh5plt(h5_file,meas,lbl,axis,yax='log',lgnd_size=30,peek=False):
     """
 
     if type(h5_file) == str:
-        h5_data = h5_import(h5)
+        h5_data = h5_import(h5_file)
     else:
         h5_data = h5_file
 
@@ -497,4 +497,5 @@ def qkh5plt(h5_file,meas,lbl,axis,yax='log',lgnd_size=30,peek=False):
     elif yax == 'lin':
         axis.semilogx(h5_data['freq'][:],h5_data[meas][:],label=lbl)
 
-    ax.legend(prop={'size':lgnd_size})
+    axis.legend(prop={'size':lgnd_size})
+    plt.xlim(h5_data['freq'][0],h5_data['freq'][-1])
