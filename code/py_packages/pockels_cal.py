@@ -180,8 +180,8 @@ inp_voltage_swept=0, plot_saving=False, model=False):
 
     #Make final directory
     labl = date + '_' + meas_type + '_'  + spectra_type + '_' + sample           # label of the directory containing all the figures and .h5 file
-    if xtradir != 'none':
-        labl = date + '_' + meas_type + '_' + spectra_type + '_' + xtradir +  \  # adjusted label if an extra directory was used
+    if xtradir != 'none':                                                        # adjusted label if an extra directory was used
+        labl = date + '_' + meas_type + '_' + spectra_type + '_' + xtradir +  \
         '_' + sample
     new_final_dir = final_dir + '/' + labl
   #  figure_dir = new_final_dir + '/figs'
@@ -286,8 +286,8 @@ inp_voltage_swept=0, plot_saving=False, model=False):
 
         stf_unnorm = swept_tf*inp_voltage_swept                                  # Unnormalized transfer function measurement
 
-        s_unnorm = [meas_swep[0], abs(stf_unnorm), np.angle(stf_unnorm,  \       # Unnormalized transfer function in triad format
-        deg=True)]
+        s_unnorm = [meas_swep[0], abs(stf_unnorm), np.angle(stf_unnorm,  \
+        deg=True)]                                                               # Unnormalized transfer function in triad format
 
         if plot_saving == True:                                                  # Plot voltage spectra for transfer function measurement if requested
             bode_plt(s_unnorm, new_final_dir, date.replace('_','\_'), \
@@ -450,3 +450,37 @@ inp_voltage_swept=0, plot_saving=False, model=False):
         f.close()
 
     return final_fig
+
+
+def h5_import(dir):
+    return h5py.File(dir + '/data.hdf5', 'r')
+
+def qkh5plt(h5_file,meas,lbl,axis,yax='log',lgnd_size=30):
+    """
+    Plotting tool that allows you to quickly plot any one of the traces from an
+    h5 file.
+
+    h5_file : Can be an already open h5 file or a directory to an h5 file
+
+    meas : The measurement you wish to select from the options in the h5 file
+
+    axis : needs to inherit axis from already established figure
+
+    lbl : Label you want to tag onto the h5 Efield_strength_estimate
+
+    yax : can swap between a logrithmic and linear yaxis
+
+    lgnd_size : size of legend font
+    """
+    
+    if type(h5_file) == str:
+        h5_data = h5_import(h5)
+    else:
+        h5_data = h5_file
+
+    if yax == 'log':
+        axis.loglog(h5_data['freq'][:],h5_data[meas][:],label=lbl)
+    elif yax == 'lin':
+        axis.semilogx(h5_data['freq'][:],h5_data[meas][:],label=lbl)
+
+    ax.legend(prop={'size':lgnd_size})
