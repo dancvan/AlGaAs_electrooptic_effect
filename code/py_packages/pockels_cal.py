@@ -455,7 +455,18 @@ inp_voltage_swept=0, plot_saving=False, model=False):
 def h5_import(dir):
     return h5py.File(dir + '/data.hdf5', 'r')
 
-def qkh5plt(h5_file,meas,lbl,axis,yax='log',lgnd_size=30):
+def printname(name):
+    print(name)
+
+def h5_peek(h5_file):
+    if type(h5_file) == str:
+        h5_data = h5_import(h5)
+    else:
+        h5_data = h5_file
+
+    return h5_data.visit(printname)
+
+def qkh5plt(h5_file,meas,lbl,axis,yax='log',lgnd_size=30,peek=False):
     """
     Plotting tool that allows you to quickly plot any one of the traces from an
     h5 file.
@@ -466,17 +477,20 @@ def qkh5plt(h5_file,meas,lbl,axis,yax='log',lgnd_size=30):
 
     axis : needs to inherit axis from already established figure
 
-    lbl : Label you want to tag onto the h5 Efield_strength_estimate
+    lbl : Label we want to tag onto the requested dataset
 
     yax : can swap between a logrithmic and linear yaxis
 
     lgnd_size : size of legend font
     """
-    
+
     if type(h5_file) == str:
         h5_data = h5_import(h5)
     else:
         h5_data = h5_file
+
+    if peek == True:
+        h5_peek(h5_file)
 
     if yax == 'log':
         axis.loglog(h5_data['freq'][:],h5_data[meas][:],label=lbl)
