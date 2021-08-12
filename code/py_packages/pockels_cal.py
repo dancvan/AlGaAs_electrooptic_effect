@@ -101,7 +101,7 @@ def function_transfer(freq,tf_in):
     """
     Converts transfer function back to amplitude and phase data
     """
-    db = 20*np.log(abs(tf_in))
+    db = 20*np.log10(abs(tf_in))
     deg = np.angle(tf_in, deg=True)
     return freq, db, deg
 
@@ -209,8 +209,8 @@ inp_voltage_swept=0, plot_saving=False, model=False):
     OLG = tf_import(OLG_dir)
     #If the data is a swept frequency measurement
     if meas_type == 'swept':                                                     # import HVA CH1 transfer function data for transfer function measurement
-        #HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
-        HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/'
+        HVA_CH1_dir = HVA_common_dir + 'HVACH1/' + date + '/'
+        #HVA_CH1_dir = HVA_common_dir + 'HVACH1_w_LPF/' + date + '/'
         if xtradir != 'none':
             HVA_CH1_dir = HVA_CH1_dir + xtradir + '/'
 
