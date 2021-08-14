@@ -1,0 +1,36 @@
+#figure size
+figure.figsize : 36.8, 20
+
+#tex 
+text.usetex : True
+
+#title and axes fontsize
+axes.titlesize : 60
+axes.labelsize : 40
+
+#line thickness
+lines.linewidth : 3
+lines.markersize : 10
+
+#tick sizes
+xtick.labelsize : 40
+xtick.major.size : 10
+xtick.minor.size : 5.5
+xtick.major.width : 1.5
+xtick.minor.width : 2
+ytick.labelsize : 40
+ytick.major.size : 10
+ytick.minor.size : 5.5
+ytick.major.width : 1.5
+ytick.minor.width : 2
+ytick.minor.visible : True
+
+#gridline parameters
+axes.grid : True
+axes.grid.axis : both
+axes.grid.which : both
+grid.linewidth : 2
+grid.linestyle : :
+
+#legend
+legend.fontsize : 40
